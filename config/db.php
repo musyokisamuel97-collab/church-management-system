@@ -1,12 +1,14 @@
 <?php
-$host="localhost";
-$user="root";
-$password="";
-$db="church_db";
 
-$conn=mysqli_connect($host,$user,$password,$db);
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "church_management";
 
-if(!$conn){
-die("Connection failed");
+$conn = new mysqli($host, $user, $password, $database);
+
+if ($conn->connect_error) {
+    die("Database Connection Failed: " . $conn->connect_error);
 }
+
 ?>
