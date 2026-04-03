@@ -5,10 +5,10 @@ $user = "root";
 $password = "";
 $database = "church_db";
 
-$conn = mysqli_connect($host, $user, $password, $database);
+$conn = mysqli_connect($host,$user,$password,$database);
 
 if(!$conn){
-    die("Database connection failed");
+die("Connection failed");
 }
 
 ?>
