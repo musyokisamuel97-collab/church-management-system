@@ -7,16 +7,18 @@ $name=$_POST['name'];
 $phone=$_POST['phone'];
 
 mysqli_query($conn,"INSERT INTO members(name,phone) VALUES('$name','$phone')");
-
 }
 ?>
 
 <header>
+
 <img src="assets/logo.png">
-<h1>JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI</h1>
+
+<h2>JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI</h2>
+
 </header>
 
-<div class="container">
+<div class="main">
 
 <h2>Members</h2>
 
@@ -30,14 +32,33 @@ mysqli_query($conn,"INSERT INTO members(name,phone) VALUES('$name','$phone')");
 
 </form>
 
-</div>
+<table>
 
-<div class="footer-nav">
+<tr>
 
-<a href="dashboard.php">Dashboard</a>
-<a href="members.php">Members</a>
-<a href="visitors.php">Visitors</a>
-<a href="inventory.php">Inventory</a>
-<a href="logout.php">Logout</a>
+<th>Name</th>
+<th>Phone</th>
+
+</tr>
+
+<?php
+
+$result=mysqli_query($conn,"SELECT * FROM members");
+
+while($row=mysqli_fetch_assoc($result)){
+
+echo "<tr>
+
+<td>".$row['name']."</td>
+
+<td>".$row['phone']."</td>
+
+</tr>";
+
+}
+
+?>
+
+</table>
 
 </div>
