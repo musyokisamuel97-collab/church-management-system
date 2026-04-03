@@ -1,43 +1,45 @@
 # JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI
 Church Management System
 
-This system helps manage church operations including:
+Features
 
-• Members management
-• Visitors tracking
-• Follow-up management
-• Church inventory (media, technical, church items)
-• User role management
-• Reports
+- Members management
+- Visitors tracking
+- Visitor follow-up
+- Church inventory management
+- User role management
+- Dashboard navigation
+- Church logo display
+- Bottom navigation buttons
 
-Roles in the system:
+Roles
 
 Admin
+- Full system access
+- Add users
 - Manage members
 - Manage visitors
-- Manage follow-ups
 - Manage inventory
-- Add users
 - View reports
 
 Patron
 - View inventory
-- Monitor church items
+- Monitor church assets
 
-Technologies Used:
+Technologies
 
-- PHP
-- MySQL
-- HTML
-- CSS
-- XAMPP
+PHP
+MySQL
+HTML
+CSS
+XAMPP
 
-How to Run:
+How to Run
 
 1 Download the project from GitHub
-2 Move it to XAMPP htdocs folder
-3 Import the database using phpMyAdmin
+2 Move the folder to XAMPP htdocs
+3 Import database using phpMyAdmin
 4 Start Apache and MySQL
-5 Open in browser
+5 Open browser
 
 http://localhost/church-management-system
