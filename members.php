@@ -1,35 +1,43 @@
-<?php include 'db.php'; ?>
+<?php
+include 'db.php';
 
-<!DOCTYPE html>
-<html>
+if(isset($_POST['add'])){
 
-<head>
-<title>Members</title>
-<link rel="stylesheet" href="style.css">
-</head>
+$name=$_POST['name'];
+$phone=$_POST['phone'];
 
-<body>
+mysqli_query($conn,"INSERT INTO members(name,phone) VALUES('$name','$phone')");
+
+}
+?>
 
 <header>
-<h2>Members</h2>
+<img src="assets/logo.png">
+<h1>JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI</h1>
 </header>
 
 <div class="container">
 
-<a href="add_member.php"><button>Add Member</button></a>
+<h2>Members</h2>
 
-<table>
+<form method="POST">
 
-<tr>
-<th>Name</th>
-<th>Phone</th>
-<th>Email</th>
-<th>Address</th>
-</tr>
+<input type="text" name="name" placeholder="Member Name">
 
-</table>
+<input type="text" name="phone" placeholder="Phone">
+
+<button class="btn" name="add">Add Member</button>
+
+</form>
 
 </div>
 
-</body>
-</html>
+<div class="footer-nav">
+
+<a href="dashboard.php">Dashboard</a>
+<a href="members.php">Members</a>
+<a href="visitors.php">Visitors</a>
+<a href="inventory.php">Inventory</a>
+<a href="logout.php">Logout</a>
+
+</div>
