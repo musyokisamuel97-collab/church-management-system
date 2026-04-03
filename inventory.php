@@ -1,33 +1,46 @@
-<!DOCTYPE html>
-<html>
+<?php
+include 'db.php';
 
-<head>
-<title>Church Inventory</title>
-<link rel="stylesheet" href="style.css">
-</head>
+if(isset($_POST['add'])){
 
-<body>
+$item=$_POST['item'];
+$department=$_POST['department'];
+$quantity=$_POST['quantity'];
+
+mysqli_query($conn,"INSERT INTO inventory(item_name,department,quantity) VALUES('$item','$department','$quantity')");
+
+}
+?>
 
 <header>
-<h2>Church Inventory</h2>
+<img src="assets/logo.png">
+<h1>JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI</h1>
 </header>
 
 <div class="container">
 
-<a href="add_item.php"><button>Add Item</button></a>
+<h2>Church Inventory</h2>
 
-<table>
+<form method="POST">
 
-<tr>
-<th>Item Name</th>
-<th>Department</th>
-<th>Quantity</th>
-<th>Status</th>
-</tr>
+<input type="text" name="item" placeholder="Item Name">
 
-</table>
+<input type="text" name="department" placeholder="Department">
+
+<input type="number" name="quantity" placeholder="Quantity">
+
+<button class="btn" name="add">Add Item</button>
+
+</form>
 
 </div>
 
-</body>
-</html>
+<div class="footer-nav">
+
+<a href="dashboard.php">Dashboard</a>
+<a href="members.php">Members</a>
+<a href="visitors.php">Visitors</a>
+<a href="inventory.php">Inventory</a>
+<a href="logout.php">Logout</a>
+
+</div>
