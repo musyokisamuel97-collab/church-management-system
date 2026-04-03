@@ -1,11 +1,11 @@
 body{
 font-family:Arial;
-background:#f2f2f2;
+background:#f4f4f4;
 margin:0;
 }
 
 .header{
-background:#003366;
+background:#002b5c;
 color:white;
 padding:10px;
 display:flex;
@@ -17,14 +17,10 @@ width:60px;
 margin-right:10px;
 }
 
-.subtitle{
-font-size:14px;
-}
-
 .menu{
-background:#003366;
-padding:10px;
+background:#002b5c;
 text-align:center;
+padding:10px;
 }
 
 .menu a{
@@ -33,31 +29,26 @@ margin:10px;
 text-decoration:none;
 }
 
-.dashboard{
-padding:20px;
-}
-
 .card{
 background:white;
-padding:15px;
+padding:20px;
 margin:10px;
 display:inline-block;
-border-radius:5px;
+border-radius:6px;
 }
 
-.login-box{
+.login{
 width:350px;
-margin:120px auto;
+margin:150px auto;
 background:white;
 padding:30px;
 text-align:center;
-border-radius:5px;
 }
 
-.login-box input{
+.login input{
 width:100%;
 padding:10px;
-margin:10px 0;
+margin:10px;
 }
 
 button{
