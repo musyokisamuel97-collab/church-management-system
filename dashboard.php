@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+session_start();
+?>
+
 <html>
 
 <head>
@@ -9,26 +12,50 @@
 <body>
 
 <header>
+
+<img src="assets/logo.png">
+
 <h1>JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI</h1>
+
 </header>
-
-<nav>
-
-<a href="members.php">Members</a>
-<a href="visitors.php">Visitors</a>
-<a href="followups.php">Follow Ups</a>
-<a href="inventory.php">Inventory</a>
-<a href="reports.php">Reports</a>
-<a href="users.php">Users</a>
-<a href="logout.php">Logout</a>
-
-</nav>
 
 <div class="container">
 
-<h2>Church Management Dashboard</h2>
+<h2>Main Dashboard</h2>
 
-<p>Welcome to the church management system.</p>
+<div class="card">
+<a href="members.php">Members</a>
+</div>
+
+<div class="card">
+<a href="visitors.php">Visitors</a>
+</div>
+
+<div class="card">
+<a href="followup.php">Follow Up</a>
+</div>
+
+<div class="card">
+<a href="inventory.php">Inventory</a>
+</div>
+
+<div class="card">
+<a href="users.php">Users</a>
+</div>
+
+</div>
+
+<div class="footer-nav">
+
+<a href="dashboard.php">Dashboard</a>
+
+<a href="members.php">Members</a>
+
+<a href="visitors.php">Visitors</a>
+
+<a href="inventory.php">Inventory</a>
+
+<a href="logout.php">Logout</a>
 
 </div>
 
