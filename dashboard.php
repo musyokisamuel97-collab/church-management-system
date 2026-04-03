@@ -7,14 +7,12 @@ $visitors=mysqli_num_rows(mysqli_query($conn,"SELECT * FROM visitors"));
 $inventory=mysqli_num_rows(mysqli_query($conn,"SELECT * FROM inventory"));
 ?>
 
-<div class="dashboard">
-
-<h3>Dashboard</h3>
+<h2>Dashboard</h2>
 
 <div class="card">Members: <?php echo $members; ?></div>
-<div class="card">Visitors: <?php echo $visitors; ?></div>
-<div class="card">Inventory Items: <?php echo $inventory; ?></div>
 
-</div>
+<div class="card">Visitors: <?php echo $visitors; ?></div>
+
+<div class="card">Inventory Items: <?php echo $inventory; ?></div>
 
 <?php include("menu.php"); ?>
