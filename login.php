@@ -1,24 +1,24 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+<title>JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI</title>
+</head>
 
-$conn = new mysqli("localhost", "root", "", "church_db");
+<body>
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+<h2>Church Management System Login</h2>
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+<form action="dashboard.php" method="POST">
 
-$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+<label>Username</label><br>
+<input type="text" name="username" required><br><br>
 
-$result = $conn->query($sql);
+<label>Password</label><br>
+<input type="password" name="password" required><br><br>
 
-if ($result->num_rows > 0) {
-    echo "Login successful";
-} else {
-    echo "Invalid username or password";
-}
+<button type="submit">Login</button>
 
-$conn->close();
+</form>
 
-?>
+</body>
+</html>
