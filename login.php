@@ -3,6 +3,7 @@ session_start();
 include("config/db.php");
 
 if(isset($_POST['login'])){
+
 $username=$_POST['username'];
 $password=md5($_POST['password']);
 
@@ -10,8 +11,14 @@ $sql="SELECT * FROM users WHERE username='$username' AND password='$password'";
 $result=$conn->query($sql);
 
 if($result->num_rows>0){
-$_SESSION['user']=$username;
+
+$row=$result->fetch_assoc();
+
+$_SESSION['user']=$row['username'];
+$_SESSION['role']=$row['role'];
+
 header("Location: dashboard.php");
+
 }else{
 $error="Invalid login";
 }
@@ -33,10 +40,16 @@ $error="Invalid login";
 <p>CITY OF CHAMPIONS</p>
 
 <form method="post">
+
 <input type="text" name="username" placeholder="Username" required>
+
 <input type="password" name="password" placeholder="Password" required>
+
 <button name="login">Login</button>
+
 </form>
+
+<?php if(isset($error)) echo $error; ?>
 
 </div>
 
