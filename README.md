@@ -2,69 +2,37 @@
 
 ## Church Management System
 
-This is a **Church Management System** designed to help manage the activities of **Joy Christian Fellowship Ongata Rongai**.
+This system helps manage church activities including members, visitors, follow-ups, inventory and reports.
 
 ## Features
 
-### Authentication
+* Secure Login System
+* Members Management
+* Visitors Tracking
+* Follow-up Tracking
+* Church Inventory Management
+* Monthly Reports
+* User Management (Admin & Patron)
 
-* Admin Login
-* Role-based access (Admin / Patron)
-
-### Members Management
-
-* Add members
-* View members
-* Edit members
-
-### Visitor Management
-
-* Record visitors
-* Capture place of interest
-* Track visitor history
-
-### Follow-up System
-
-* Track member and visitor follow-ups
-* Record follow-up notes
-
-### Church Inventory
-
-* Manage church items
-* Media ministry equipment
-* Technical equipment
-* Track item location
-
-### Reports
-
-* Monthly visitor reports
-* Member reports
-* Printable reports
-
-### User Management
-
-* Admin can add new users
-* Admin controls the entire system
-
-## Technologies Used
+## Technologies
 
 * PHP
 * MySQL
-* HTML / CSS
-* XAMPP
+* HTML
+* CSS
 
 ## Installation
 
 1. Download the project from GitHub
-2. Move the folder to:
+2. Move the folder into:
 
 xampp/htdocs/
 
 3. Start Apache and MySQL
-4. Open browser:
+4. Open browser and go to:
 
 http://localhost/joy-church-management-system
 
-## Developed for
+## Developed For
 
-**JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI**
+JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI
