@@ -1,0 +1,49 @@
+body{
+font-family: Arial;
+background:#f5f5f5;
+margin:0;
+}
+
+header{
+background:#1f3c88;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav{
+background:#f4b400;
+padding:10px;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+padding:20px;
+}
+
+button{
+background:#1f3c88;
+color:white;
+padding:10px;
+border:none;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table, th, td{
+border:1px solid #ccc;
+}
+
+th{
+background:#1f3c88;
+color:white;
+}
