@@ -1,22 +1,53 @@
-<!DOCTYPE html>
-<html>
+<?php
+include("header.php");
+include("config/db.php");
 
-<head>
-<title>Reports</title>
-<link rel="stylesheet" href="style.css">
-</head>
+$members=mysqli_query($conn,"SELECT * FROM members");
+$visitors=mysqli_query($conn,"SELECT * FROM visitors");
+?>
 
-<body>
+<h3>Monthly Reports</h3>
 
-<header>
-<h2>Church Reports</h2>
-</header>
+<button onclick="window.print()">Print Report</button>
 
-<div class="container">
+<h4>Members</h4>
 
-<p>Reports for visitors, members and inventory will appear here.</p>
+<table>
 
-</div>
+<tr>
+<th>Name</th>
+<th>Phone</th>
+</tr>
 
-</body>
-</html>
+<?php while($row=mysqli_fetch_assoc($members)){ ?>
+
+<tr>
+<td><?php echo $row['name']; ?></td>
+<td><?php echo $row['phone']; ?></td>
+</tr>
+
+<?php } ?>
+
+</table>
+
+<h4>Visitors</h4>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Phone</th>
+</tr>
+
+<?php while($row=mysqli_fetch_assoc($visitors)){ ?>
+
+<tr>
+<td><?php echo $row['name']; ?></td>
+<td><?php echo $row['phone']; ?></td>
+</tr>
+
+<?php } ?>
+
+</table>
+
+<?php include("menu.php"); ?>
