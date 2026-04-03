@@ -55,3 +55,26 @@ background:#004080;
 color:white;
 border:none;
 }
+header{
+display:flex;
+align-items:center;
+background:#003366;
+color:white;
+padding:10px;
+}
+
+.logo{
+width:60px;
+margin-right:15px;
+}
+
+nav{
+background:#444;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin-right:10px;
+text-decoration:none;
+}
