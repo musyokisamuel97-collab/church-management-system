@@ -1,35 +1,44 @@
-<?php include 'db.php'; ?>
+<?php
+include 'db.php';
 
-<!DOCTYPE html>
-<html>
+if(isset($_POST['add'])){
 
-<head>
-<title>Visitors</title>
-<link rel="stylesheet" href="style.css">
-</head>
+$name=$_POST['name'];
+$phone=$_POST['phone'];
+$date=date("Y-m-d");
 
-<body>
+mysqli_query($conn,"INSERT INTO visitors(name,phone,visit_date) VALUES('$name','$phone','$date')");
+
+}
+?>
 
 <header>
-<h2>Visitors</h2>
+<img src="assets/logo.png">
+<h1>JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI</h1>
 </header>
 
 <div class="container">
 
-<a href="add_visitor.php"><button>Add Visitor</button></a>
+<h2>Visitors</h2>
 
-<table>
+<form method="POST">
 
-<tr>
-<th>Name</th>
-<th>Phone</th>
-<th>Place of Interest</th>
-<th>Date</th>
-</tr>
+<input type="text" name="name" placeholder="Visitor Name">
 
-</table>
+<input type="text" name="phone" placeholder="Phone">
+
+<button class="btn" name="add">Add Visitor</button>
+
+</form>
 
 </div>
 
-</body>
-</html>
+<div class="footer-nav">
+
+<a href="dashboard.php">Dashboard</a>
+<a href="members.php">Members</a>
+<a href="visitors.php">Visitors</a>
+<a href="inventory.php">Inventory</a>
+<a href="logout.php">Logout</a>
+
+</div>
