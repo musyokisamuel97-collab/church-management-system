@@ -1,130 +1,70 @@
-# Church Management System ⛪
+# JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI
 
-## Overview
+## Church Management System
 
-The Church Management System is a web-based application designed to help churches manage their members, visitors, ministries, inventory, and church activities efficiently.
+This is a **Church Management System** designed to help manage the activities of **Joy Christian Fellowship Ongata Rongai**.
 
-The system allows administrators and church leaders to track important church information, manage follow-ups for visitors, monitor church inventory, and generate reports.
+## Features
 
----
+### Authentication
 
-## Features 🚀
+* Admin Login
+* Role-based access (Admin / Patron)
 
-### 1. User Management
+### Members Management
 
-* Admin can create and manage system users
-* Role-based access control
-* User roles include:
+* Add members
+* View members
+* Edit members
 
-  * Admin
-  * Patron
-  * Staff
-
-### 2. Member Management
-
-* Register church members
-* Update member information
-* Track member ministries
-* Search and view members
-
-### 3. Visitor Management
-
-* Record visitor details
-* Track visit date
-* Record place of interest
-* Assign visitors for follow-up
-
-### 4. Follow-Up System
-
-* Track visitor follow-ups
-* Record contact method (call, visit, message)
-* Update follow-up status
-* Assign follow-ups to church leaders
-
-### 5. Church Inventory Management
-
-* Track church equipment and items
-* Manage inventory categories
-* Monitor item quantities
-* Track borrowed and returned items
-
-### 6. Ministries Management
-
-* Organize church ministries such as:
-
-  * Media Ministry
-  * Technical Ministry
-  * Choir
-  * Youth Ministry
-  * Ushers
-
-### 7. Reports
-
-Generate printable reports such as:
-
-* Visitors in a certain month
-* Members list
-* Follow-up reports
-* Inventory reports
-
----
-
-## System Roles 👥
-
-### Admin
-
-* Full system access
-* Manage users
-* Manage members and visitors
-* Generate reports
-* Control inventory
-
-### Patron
-
-* Manage church inventory
-* Track equipment usage
-* Update item condition
-
-### Staff
+### Visitor Management
 
 * Record visitors
-* Manage follow-ups
-* View certain reports
+* Capture place of interest
+* Track visitor history
 
----
+### Follow-up System
 
-## Project Structure 📁
+* Track member and visitor follow-ups
+* Record follow-up notes
 
-church-management-system
+### Church Inventory
 
-frontend – user interface pages
-backend – server-side logic
-database – database scripts
+* Manage church items
+* Media ministry equipment
+* Technical equipment
+* Track item location
 
----
+### Reports
 
-## Technologies Used 💻
+* Monthly visitor reports
+* Member reports
+* Printable reports
 
-* HTML
-* CSS
-* JavaScript
-* Node.js
+### User Management
+
+* Admin can add new users
+* Admin controls the entire system
+
+## Technologies Used
+
+* PHP
 * MySQL
+* HTML / CSS
+* XAMPP
 
-Version control is managed using GitHub.
+## Installation
 
----
+1. Download the project from GitHub
+2. Move the folder to:
 
-## Future Improvements 🔧
+xampp/htdocs/
 
-* Mobile-friendly interface
-* SMS notifications
-* QR code attendance
-* Online giving system
-* Automated reporting
+3. Start Apache and MySQL
+4. Open browser:
 
----
+http://localhost/joy-church-management-system
 
-## Author
+## Developed for
 
-Developed as a church administration system project to improve church organization and data management.
+**JOY CHRISTIAN FELLOWSHIP ONGATA RONGAI**
